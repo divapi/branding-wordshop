@@ -1,0 +1,42 @@
+.subscribe-from-button{
+    border: none;
+    background: #615CFD;
+    padding: 12px 40px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.fa{
+    width: 38px !important;
+    height: 38px !important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px !important;
+    display: inline-block;
+    background: #3B5797;
+    color: #fff;
+    line-height: 40px !important;
+}
+
+.fa-google-plus{
+    background: #DB4337;
+}
+
+.fa-twitter{
+    background: #00ACED;
+}
+
+.fa-youtube-play{
+    background: #BB0000;
+}
+
+.fa-instagram{
+    background: #AC907A;
+}
