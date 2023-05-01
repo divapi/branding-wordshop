@@ -12,18 +12,17 @@ export class HeaderComponent {
 
   constructor(private databaseService: DatabaseService) {}
 
-  ngOnInit() {
-    this.getAllCategories();
-  }
+  // ngOnInit() {
+  //   this.getAllCategories();
+  // }
 
-  ngOnDestroy(){
-    this.categorySubscribe.unsubscribe();
-  }
+  // ngOnDestroy(){
+  //   this.categorySubscribe.unsubscribe();
+  // }
 
-  getAllCategories() {
-    this.categorySubscribe = this.databaseService.getCategories().subscribe((categories: any) =>{
-      this.categories = categories;
-    })
-  }
-
+  // getAllCategories() {
+  //   this.categorySubscribe = this.databaseService.getCategories().subscribe((categories: any) =>{
+  //     this.categories = categories;
+  //   })
+  // }
 }

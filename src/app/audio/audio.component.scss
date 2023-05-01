@@ -1,0 +1,30 @@
+.controls{
+    display: flex;
+    align-items: center;
+}
+
+.controls-span{
+    display: flex;
+}
+
+.progress{
+    margin-top: 2px;
+    width: 200px;
+    height: 30px;
+}
+
+.span{
+    margin-right: 10px;
+}
+
+.volume{
+    margin-top: 2px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: aqua;
+}
+
+.download{
+    margin-left: 10px;
+    
+}

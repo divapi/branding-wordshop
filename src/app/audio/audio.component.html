@@ -1,0 +1,16 @@
+<div class="player">
+    <audio  #audio>
+        <source [src]="audioSrc" type="audio/mp3">
+    </audio>
+    <div class="controls">
+        <div class="controls-span">
+            <span class="span" (click)="playAudio()"> 
+                <img *ngIf="isPlay; else pauze" class="icon" src="/assets/img/icon/free-icon-stop-button-3722513.png"> 
+                 <ng-template #pauze> <img src="/assets/img/icon/free-icon-play-3024584 (2).png"> </ng-template>
+            </span>
+            <input class="progress" type="range" min="0" max="100" [value]="progress" (input)="scrub($event)">
+            <input class="volume" type="range" name="volume" min="0" max="1" step="0.1" [value]="volume" (input)="volumeLevel($event)">
+            <a class="download" [href]="audioSrc" download=""><img src="/assets/img/icon/free-icon-download-126488.png"></a>
+        </div>
+    </div>
+</div>

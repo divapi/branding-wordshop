@@ -14,8 +14,11 @@ import { DatabaseService } from './services/database.service';
 import { AboutComponent } from './about/about.component';
 import { TracksComponent } from './tracks/tracks.component';
 import { BlogComponent } from './blog/blog.component';
-import { PagesComponent } from './pages/pages.component';
 import { ContactComponent } from './contact/contact.component';
+import { AudioComponent } from './audio/audio.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,12 +29,14 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     TracksComponent,
     BlogComponent,
-    PagesComponent,
     ContactComponent,
+    AudioComponent,
+    SingleBlogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule
   ],

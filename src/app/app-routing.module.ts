@@ -4,16 +4,19 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { TracksComponent } from './tracks/tracks.component';
 import { BlogComponent } from './blog/blog.component';
-import { PagesComponent } from './pages/pages.component';
 import { ContactComponent } from './contact/contact.component';
+import { AudioComponent } from './audio/audio.component';
+import { SingleBlogComponent } from './single-blog/single-blog.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component:AboutComponent},
   {path: 'tracks', component:TracksComponent},
   {path: 'blog', component:BlogComponent},
-  {path: 'pages', component:PagesComponent},
   {path: 'contact', component:ContactComponent},
+  {path: 'audio', component:AudioComponent},
+  {path: 'single-blog', component:SingleBlogComponent}
+
 ];
 
 @NgModule({
