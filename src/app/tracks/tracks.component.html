@@ -7,28 +7,30 @@
                 </div>
             </div>
         </div>
-    <div class="audio" class="row align-items-center justify-content-center mb-20" *ngFor="let item of data">
-        <div class="col-xl-10">
-            <div class="row align-items-center">
-                <div class="col-xl-9 col-md-9">
-                    <div class="music_field">
-                        <div class="thumb">
-                            <img class="img" src={{item.image}} alt="">
-                        </div>
-                        <div class="audio_name">
+    
+        <div class="audio" class="row align-items-center justify-content-center mb-20" *ngFor="let item of data">
+            <div class="col-xl-10">
+                <div class="row align-items-center">
+                    <div class="col-xl-9 col-md-9">
+                        <div class="music_field">
+                            <div class="thumb">
+                                <img class="img" src={{item.image}} alt="">
+                            </div>
                             <div class="audio_name">
-                                <div class="name">
-                                    <h4>{{item.name}}</h4>
-                                    <p>{{item.release}}</p>
+                                <div class="audio_name">
+                                    <div class="name">
+                                        <h4 class="name-h4">{{item.name}}</h4>
+                                        <p>{{item.release}}</p>
+                                    </div>
+                                    <app-audio audioSrc ={{item.href}}></app-audio>
                                 </div>
-                                <app-audio audioSrc ={{item.href}}></app-audio>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-3 col-md-3">
-                    <div class="music_btn">
-                        <span routerLink="/" class="boxed-btn">buy albam</span>
+                    <div class="col-xl-3 col-md-3">
+                        <div class="music_btn">
+                            <span routerLink="/" class="boxed-btn">buy albam</span>
+                        </div>
                     </div>
                 </div>
             </div>
