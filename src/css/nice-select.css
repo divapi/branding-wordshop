@@ -108,14 +108,7 @@
 
 .no-csspointerevents .nice-select.open .list {
   display: block; }
-
-
-
-
-
-  /* ,,,,,,,,,,,,,,,, */
-
-
+  
   .nice-select:after {
     content: "\e64b";
     display: block;
